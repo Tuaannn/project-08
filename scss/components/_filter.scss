@@ -21,7 +21,7 @@
     }
 
     &-filter-detail {
-        z-index: 1;
+        z-index: 5;
         padding: 50px 30px;
 
         border-radius: 16px;
@@ -303,9 +303,9 @@
             left: -230px;
             top: 56px;
 
-            display: none;
-
             width: 333px;
+
+            display: none;
         }
 
         &-filter-list {
