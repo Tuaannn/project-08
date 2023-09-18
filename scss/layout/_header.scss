@@ -29,6 +29,42 @@
             column-gap: 40px;
             display: flex;
             align-items: center;
+
+            &-item:nth-child(1) .header__navbar-item::before {
+                position: absolute;
+                bottom: -60px;
+                left: 0;
+
+                content: "";
+                width: 120px;
+                height: 60px;
+                background-color: transparent;
+                display: inline-block;
+            }
+
+            &-item:nth-child(2) .header__navbar-item::before {
+                position: absolute;
+                bottom: -60px;
+                left: 0;
+
+                content: "";
+                width: 90px;
+                height: 60px;
+                background-color: transparent;
+                display: inline-block;
+            }
+
+            &-item:nth-child(3) .header__navbar-item::before {
+                position: absolute;
+                bottom: -60px;
+                left: 0;
+
+                content: "";
+                width: 90px;
+                height: 60px;
+                background-color: transparent;
+                display: inline-block;
+            }
         }
 
         &-item {

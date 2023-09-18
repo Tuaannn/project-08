@@ -16,6 +16,7 @@
         position: absolute;
         top: 104px;
         left: 0;
+        z-index: 2;
 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -31,7 +32,7 @@
 
         visibility: hidden;
         opacity: 0;
-        transition: 0.5s;
+        transition: 0.2s;
 
         &__triangle {
             position: absolute;
@@ -42,6 +43,7 @@
 
             width: 15px;
             height: 15px;
+            border-radius: 4px;
             rotate: 45deg;
         }
 
@@ -273,6 +275,18 @@
     .header-detail-wrap {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header-detail-wrap::before {
+        position: absolute;
+        left: -100px;
+        top: 30px;
+
+        content: "";
+        width: 100px;
+        height: 510px;
+        display: inline-block;
+        background-color: transparent;
     }
 }
 

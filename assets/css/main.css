@@ -192,6 +192,7 @@ a {
   position: absolute;
   top: 104px;
   left: 0;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
@@ -202,7 +203,7 @@ a {
   box-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
   visibility: hidden;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .header-detail__triangle {
   position: absolute;
@@ -212,6 +213,7 @@ a {
   box-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
   width: 15px;
   height: 15px;
+  border-radius: 4px;
   rotate: 45deg;
 }
 .header-detail__item,
@@ -388,6 +390,16 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  .header-detail-wrap::before {
+    position: absolute;
+    left: -100px;
+    top: 30px;
+    content: "";
+    width: 100px;
+    height: 510px;
+    display: inline-block;
+    background-color: transparent;
+  }
 }
 /*  Tablet and mobile*/
 /*  Tablet */
@@ -476,6 +488,7 @@ a {
   position: absolute;
   top: 104px;
   left: 0;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
@@ -664,7 +677,7 @@ a {
   .header-grocery {
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.2s;
   }
 }
 /*  Tablet and mobile*/
@@ -712,6 +725,7 @@ a {
   position: absolute;
   top: 104px;
   left: 0;
+  z-index: 2;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
@@ -866,7 +880,7 @@ a {
   .header-beauty {
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.2s;
   }
 }
 /*  Tablet and mobile*/
@@ -926,6 +940,36 @@ a {
   column-gap: 40px;
   display: flex;
   align-items: center;
+}
+.header__navbar-list-item:nth-child(1) .header__navbar-item::before {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  content: "";
+  width: 120px;
+  height: 60px;
+  background-color: transparent;
+  display: inline-block;
+}
+.header__navbar-list-item:nth-child(2) .header__navbar-item::before {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  content: "";
+  width: 90px;
+  height: 60px;
+  background-color: transparent;
+  display: inline-block;
+}
+.header__navbar-list-item:nth-child(3) .header__navbar-item::before {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  content: "";
+  width: 90px;
+  height: 60px;
+  background-color: transparent;
+  display: inline-block;
 }
 .header__navbar-item {
   position: relative;
@@ -1140,22 +1184,6 @@ a {
   font-weight: 700;
   line-height: 1.41;
 }
-.total-filter {
-  padding: 6px 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 110px;
-  height: 36px;
-  border-radius: 6px;
-  background: #fff;
-}
-.total-filter__desc {
-  color: #6c6c72;
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 1.42;
-}
 .total-list {
   margin-top: 20px;
   display: flex;
@@ -1297,8 +1325,24 @@ a {
 }
 .total-filter {
   position: relative;
+  cursor: pointer;
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
+  height: 36px;
+  border-radius: 6px;
+  background: #fff;
 }
-.total-filter:hover .total-filter-detail {
+.total-filter__desc {
+  color: #6c6c72;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+  user-select: none;
+}
+.total-filter__checkbox:checked ~ .total-filter-detail {
   visibility: visible;
   opacity: 1;
 }
@@ -1464,7 +1508,7 @@ a {
   width: 334px;
   height: 44px;
   border: 1px solid #d2d1d6;
-  padding: 10px 56px 10px 16px;
+  padding: 10px 52px 10px 16px;
   border-radius: 6px;
 }
 .total-filter__search::placeholder {
@@ -1475,7 +1519,7 @@ a {
 .total-filter__search-button {
   position: absolute;
   top: 70px;
-  right: 16px;
+  right: 26px;
 }
 .total-filter__button-wrap {
   margin-top: 18px;
@@ -1524,7 +1568,7 @@ a {
 /*  Tablet */
 /*  Mobile */
 @media screen and (max-width: 767.98px) {
-  .total-filter:hover .total-filter-detail {
+  .total-filter__checkbox:checked ~ .total-filter-detail {
     display: block;
   }
   .total-filter-detail {
