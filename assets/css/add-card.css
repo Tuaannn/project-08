@@ -1235,7 +1235,7 @@ a {
   column-gap: 10px;
 }
 .profile-left__account:nth-child(2) .profile-left__account-desc:nth-child(3)::before {
-  content: url(../../assets/images/Profile2.svg);
+  content: url(../../assets/images/profile2.svg);
 }
 .profile-left__account:nth-child(2) .profile-left__account-desc:nth-child(4) {
   margin-left: -2px;
