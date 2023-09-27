@@ -1406,6 +1406,11 @@ a {
 .add-card__desc {
   position: relative;
   margin-left: 30px;
+  color: #1a162e;
+  user-select: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.46;
 }
 .add-card__desc::before {
   position: absolute;
@@ -1430,13 +1435,6 @@ a {
   border-left: 2px solid #fff;
   rotate: -45deg;
   display: none;
-}
-.add-card__desc {
-  color: #1a162e;
-  user-select: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.46;
 }
 .add-card__button-group {
   margin-top: 30px;
@@ -1493,6 +1491,27 @@ a {
   .add-card__check:checked ~ .add-card__desc::before {
     background-color: #67b044;
     border-color: #67b044;
+  }
+  .add-card__prefecence {
+    color: #d2d1d6;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44;
+  }
+  .add-card__desc {
+    position: relative;
+    margin-left: 30px;
+    color: #d2d1d6;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.44;
+  }
+  .add-card__desc::before {
+    top: 4px;
+    border: 1px solid #d2d1d6;
+  }
+  .add-card__desc::after {
+    top: 8px;
   }
 }
 

@@ -103,6 +103,13 @@
     &__desc {
         position: relative;
         margin-left: 30px;
+
+        color: abstracts.$textColor;
+        user-select: none;
+
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.46;
         &::before {
             position: absolute;
             left: -30px;
@@ -131,15 +138,6 @@
             rotate: -45deg;
             display: none;
         }
-    }
-
-    &__desc {
-        color: abstracts.$textColor;
-        user-select: none;
-
-        font-size: 1.5rem;
-        font-weight: 500;
-        line-height: 1.46;
     }
 
     &__button-group {
@@ -215,6 +213,32 @@
             &:checked ~ .add-card__desc::before {
                 background-color: #67b044;
                 border-color: #67b044;
+            }
+        }
+
+        &__prefecence {
+            color: #d2d1d6;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.44;
+        }
+
+        &__desc {
+            position: relative;
+            margin-left: 30px;
+
+            color: #d2d1d6;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.44;
+            &::before {
+                top: 4px;
+
+                border: 1px solid #d2d1d6;
+            }
+
+            &::after {
+                top: 8px;
             }
         }
     }
