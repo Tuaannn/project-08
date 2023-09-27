@@ -1474,6 +1474,12 @@ a {
   .profile-left {
     display: none;
   }
+  .add-card__heading {
+    color: #d2d1d6;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.44;
+  }
   .add-card__wrap {
     margin-top: 20px;
   }
@@ -1484,9 +1490,12 @@ a {
   }
   .add-card__label {
     color: #d2d1d6;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.44;
+  }
+  .add-card__text::placeholder {
+    font-size: 1.5rem;
   }
   .add-card__check:checked ~ .add-card__desc::before {
     background-color: #67b044;
@@ -1494,7 +1503,7 @@ a {
   }
   .add-card__prefecence {
     color: #d2d1d6;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.44;
   }
@@ -1502,7 +1511,7 @@ a {
     position: relative;
     margin-left: 30px;
     color: #d2d1d6;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.44;
   }

@@ -192,6 +192,12 @@
         display: none;
     }
     .add-card {
+        &__heading {
+            color: #d2d1d6;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.44;
+        }
         &__wrap {
             margin-top: 20px;
         }
@@ -204,9 +210,15 @@
 
         &__label {
             color: #d2d1d6;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 500;
             line-height: 1.44;
+        }
+
+        &__text {
+            &::placeholder {
+                font-size: 1.5rem;
+            }
         }
 
         &__check {
@@ -218,7 +230,7 @@
 
         &__prefecence {
             color: #d2d1d6;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 500;
             line-height: 1.44;
         }
@@ -228,7 +240,7 @@
             margin-left: 30px;
 
             color: #d2d1d6;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             font-weight: 500;
             line-height: 1.44;
             &::before {
