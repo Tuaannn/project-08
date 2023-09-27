@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Grocerymart</title>
-        <link rel="stylesheet" href="./assets/css/profile.css" />
+        <link rel="stylesheet" href="./assets/css/add-card.css" />
         <link rel="stylesheet" href="./assets/font/stylesheet.css" />
         <link
             rel="apple-touch-icon"
@@ -6254,7 +6254,7 @@
                                 />
                             </a>
                         </div>
-                        <a href="#!" class="header__avatar">
+                        <a href="./profile.html" class="header__avatar">
                             <img
                                 src="./assets/images/header-avt.jpg"
                                 alt=""
@@ -12326,211 +12326,216 @@
                                     <p class="profile-left__account-heading">
                                         Manage Account
                                     </p>
-                                    <p class="profile-left__account-desc">
+                                    <a
+                                        href="./personal-info.html"
+                                        class="profile-left__account-desc"
+                                    >
                                         Personal info
-                                    </p>
-                                    <p class="profile-left__account-desc">
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Addresses
-                                    </p>
-                                    <p class="profile-left__account-desc">
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Communications & privacy
-                                    </p>
+                                    </a>
                                 </div>
 
                                 <div class="profile-left__account">
                                     <p class="profile-left__account-heading">
                                         My items
                                     </p>
-                                    <p class="profile-left__account-desc">
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Reorder
-                                    </p>
-                                    <p class="profile-left__account-desc">
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Lists
-                                    </p>
-                                    <p class="profile-left__account-desc">
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Registries
-                                    </p>
+                                    </a>
                                 </div>
 
                                 <div class="profile-left__account">
                                     <p class="profile-left__account-heading">
                                         Subscriptions & plans
                                     </p>
-                                    <p class="profile-left__account-desc">
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Protection plans
-                                    </p>
+                                    </a>
                                 </div>
 
                                 <div class="profile-left__account">
                                     <p class="profile-left__account-heading">
                                         Customer Service
                                     </p>
-                                    <p class="profile-left__account-desc">
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Help
-                                    </p>
-                                    <p class="profile-left__account-desc">
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Terms of Use
-                                    </p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="profile-right">
-                            <div class="profile-right__wallet">
-                                <h2 class="profile-right__heading">
-                                    My Wallet
-                                </h2>
-                                <p class="profile-right__desc">
-                                    Payment methods
-                                </p>
-                                <div class="profile-right__card-group">
-                                    <a
-                                        href="./add-card.html"
-                                        class="profile-right__card-wrap"
-                                    >
-                                        <img
-                                            src="./assets/images/card1.svg"
-                                            alt=""
-                                            class="profile-right__card"
-                                        />
-                                    </a>
+                        <form
+                            action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                            class="add-card-search-form"
+                        >
+                            <input
+                                type="search"
+                                name=""
+                                id=""
+                                class="add-card__search"
+                                placeholder="Search for item"
+                                required
+                            />
+                            <button
+                                type="submit"
+                                class="add-card__search-submit"
+                            >
+                                <img
+                                    src="./assets/images/search-form.svg"
+                                    alt=""
+                                />
+                            </button>
+                        </form>
 
-                                    <a
-                                        href="./add-card.html"
-                                        class="profile-right__card-wrap"
-                                    >
-                                        <img
-                                            src="./assets/images/card2.svg"
-                                            alt=""
-                                            class="profile-right__card"
-                                        />
-                                    </a>
-                                    <a
-                                        href="./add-card.html"
-                                        class="profile-right__card-wrap"
-                                    >
-                                        <div
-                                            class="profile-right__add-card"
-                                        ></div>
-                                        <p class="profile-right__add-desc">
-                                            Add New Card
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="profile-right__account">
-                                <h2 class="profile-right__heading">
-                                    Account info
-                                </h2>
-                                <p class="profile-right__desc">
-                                    Addresses, contact information and password
-                                </p>
-                                <div class="profile-right__account-info">
-                                    <div class="profile-right__account-item">
-                                        <div
-                                            class="profile-right__account-item-wrap"
-                                        >
-                                            <p
-                                                class="profile-right__account-item-title"
+                        <div class="add-card">
+                            <form
+                                action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                                class="add-card-form"
+                                autocomplete="off"
+                                method="post"
+                            >
+                                <div class="add-card__wrap">
+                                    <h2 class="add-card__heading">
+                                        <a href="#!">
+                                            <img
+                                                src="./assets/images/Arrow - Left.svg"
+                                                alt=""
+                                                class="add-card__arrow"
+                                            />
+                                            <img
+                                                src="./assets/images/addcard-arrow.svg"
+                                                alt=""
+                                                class="add-card__mobile-arrow"
+                                            />
+                                        </a>
+                                        Personal info
+                                    </h2>
+                                    <div class="add-card-list">
+                                        <div class="add-card-item">
+                                            <label
+                                                for=""
+                                                class="add-card__label"
                                             >
-                                                Email Address
-                                            </p>
-                                            <p
-                                                class="profile-right__account-item-desc"
-                                            >
-                                                tarek97.ta@gmail.com
-                                            </p>
+                                                Full name
+                                            </label>
+                                            <input
+                                                type="text"
+                                                value=""
+                                                name="Full name"
+                                                class="add-card__text"
+                                                placeholder="Imran Khan"
+                                                required
+                                            />
                                         </div>
-                                    </div>
 
-                                    <div class="profile-right__account-item">
-                                        <div
-                                            class="profile-right__account-item-wrap"
-                                        >
-                                            <p
-                                                class="profile-right__account-item-title"
+                                        <div class="add-card-item">
+                                            <label
+                                                for=""
+                                                class="add-card__label"
+                                            >
+                                                Email address
+                                            </label>
+
+                                            <input
+                                                type="email"
+                                                name="Email address"
+                                                value=""
+                                                required
+                                                class="add-card__text"
+                                                placeholder="admin@uihut.com"
+                                            />
+                                        </div>
+
+                                        <div class="add-card-item">
+                                            <label
+                                                for=""
+                                                class="add-card__label"
                                             >
                                                 Phone number
-                                            </p>
-                                            <p
-                                                class="profile-right__account-item-desc"
+                                            </label>
+
+                                            <input
+                                                name="Phone number"
+                                                type="text"
+                                                value=""
+                                                class="add-card__text"
+                                                required
+                                                placeholder=" +008 01234 56789"
+                                            />
+                                        </div>
+
+                                        <div class="add-card-item">
+                                            <label
+                                                for=""
+                                                class="add-card__label"
                                             >
-                                                +000 11122 2345 657
-                                            </p>
+                                                Password
+                                            </label>
+                                            <input
+                                                name="Password"
+                                                type="password"
+                                                value=""
+                                                class="add-card__text"
+                                                required
+                                                placeholder="•••••••••"
+                                            />
                                         </div>
                                     </div>
 
-                                    <div class="profile-right__account-item">
-                                        <div
-                                            class="profile-right__account-item-wrap"
+                                    <div class="add-card__button-group">
+                                        <button
+                                            type="submit"
+                                            class="add-card__cancel"
                                         >
-                                            <p
-                                                class="profile-right__account-item-title"
-                                            >
-                                                Add an address
-                                            </p>
-                                            <p
-                                                class="profile-right__account-item-desc"
-                                            >
-                                                Bangladesh Embassy, Washington,
-                                                DC 20008
-                                            </p>
-                                        </div>
+                                            Cancel
+                                        </button>
+                                        <button
+                                            type="submit"
+                                            class="add-card__save"
+                                        >
+                                            Save Edit
+                                        </button>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="profile-right__list">
-                                <h2 class="profile-right__heading">Lists</h2>
-                                <p class="profile-right__desc">
-                                    2 items - Primar
-                                </p>
-
-                                <div class="profile-right__list-item">
-                                    <img
-                                        src="./assets/images/list1.png"
-                                        alt=""
-                                        class="profile-right__list-item-img"
-                                    />
-                                    <div class="profile-right__list-item-wrap">
-                                        <h3
-                                            class="profile-right__list-item-heading"
-                                        >
-                                            Coffee Beans - Espresso Arabica and
-                                            Robusta Beans
-                                        </h3>
-
-                                        <p
-                                            class="profile-right__list-item-price"
-                                        >
-                                            $47.00
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="profile-right__list-item">
-                                    <img
-                                        src="./assets/images/list2.png"
-                                        alt=""
-                                        class="profile-right__list-item-img"
-                                    />
-                                    <div class="profile-right__list-item-wrap">
-                                        <h3
-                                            class="profile-right__list-item-heading"
-                                        >
-                                            Lavazza Coffee Blends - Try the
-                                            Italian Espresso
-                                        </h3>
-
-                                        <p
-                                            class="profile-right__list-item-price"
-                                        >
-                                            $53.00
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>

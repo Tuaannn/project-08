@@ -1190,6 +1190,8 @@ a {
   background-image: url(../../assets/images/profile-bgr.png);
   background-size: cover;
   text-align: center;
+  width: 100%;
+  height: 246px;
   border-radius: 20px 20px 0px 0px;
   box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
 }
@@ -1306,6 +1308,7 @@ a {
 }
 .profile-left__account-desc {
   margin-top: 12px;
+  display: block;
   color: #1a162e;
   font-size: 1.5rem;
   font-weight: 400;
@@ -1352,7 +1355,7 @@ a {
   margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px 30px;
+  gap: 30px;
 }
 .add-card-item {
   display: flex;
@@ -1466,6 +1469,12 @@ a {
   .add-card__mobile-heading {
     display: none;
   }
+  .add-card__mobile-arrow {
+    display: none;
+  }
+  .add-card-search-form {
+    display: none;
+  }
 }
 /*  Tablet and mobile*/
 /*  Tablet */
@@ -1474,8 +1483,44 @@ a {
   .profile-left {
     display: none;
   }
+  .profile-wrap {
+    row-gap: 0px;
+  }
+  .add-card-search-form {
+    position: relative;
+    margin-top: 20px;
+  }
+  .add-card__search {
+    width: 100%;
+    padding: 13px 55px 13px 15px;
+    border-radius: 10px;
+    background: #fff;
+    color: #1a162e;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.44;
+  }
+  .add-card__search::-webkit-search-decoration, .add-card__search::-webkit-search-cancel-button, .add-card__search::-webkit-search-results-button, .add-card__search::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+  .add-card__search::placeholder {
+    color: #9e9da8;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42;
+  }
+  .add-card__search-submit {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .add-card__arrow {
+    display: none;
+  }
   .add-card__heading {
-    color: #d2d1d6;
+    color: #b9babe;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.44;
@@ -1489,7 +1534,7 @@ a {
     row-gap: 12px;
   }
   .add-card__label {
-    color: #d2d1d6;
+    color: #b9babe;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.44;
@@ -1502,7 +1547,7 @@ a {
     border-color: #67b044;
   }
   .add-card__prefecence {
-    color: #d2d1d6;
+    color: #b9babe;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.44;
@@ -1510,17 +1555,20 @@ a {
   .add-card__desc {
     position: relative;
     margin-left: 30px;
-    color: #d2d1d6;
+    color: #b9babe;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.44;
   }
   .add-card__desc::before {
-    top: 4px;
-    border: 1px solid #d2d1d6;
+    top: 2px;
+    border: 1px solid #b9babe;
   }
   .add-card__desc::after {
-    top: 8px;
+    top: 6px;
+  }
+  .add-card__cancel {
+    color: #b9babe;
   }
 }
 

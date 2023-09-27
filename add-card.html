@@ -6254,7 +6254,7 @@
                                 />
                             </a>
                         </div>
-                        <a href="#!" class="header__avatar">
+                        <a href="./profile.html" class="header__avatar">
                             <img
                                 src="./assets/images/header-avt.jpg"
                                 alt=""
@@ -12315,11 +12315,8 @@
                         <div class="profile-left">
                             <div class="profile-left__bgr">
                                 <div class="profile-left__info">
-                                    <img
-                                        src="./assets/images/profile.jpg"
-                                        alt=""
-                                        class="profile-left__img"
-                                    />
+                                    <img src="./assets/images/header-avt.jpg""
+                                    alt="" class="profile-left__img" />
                                     <p class="profile-left__name">Imran Khan</p>
                                     <p class="profile-left__register">
                                         Registered: 17th May 2022
@@ -12329,54 +12326,104 @@
                                     <p class="profile-left__account-heading">
                                         Manage Account
                                     </p>
-                                    <p class="profile-left__account-desc">
+                                    <a
+                                        href="./personal-info.html"
+                                        class="profile-left__account-desc"
+                                    >
                                         Personal info
-                                    </p>
-                                    <p class="profile-left__account-desc">
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Addresses
-                                    </p>
-                                    <p class="profile-left__account-desc">
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Communications & privacy
-                                    </p>
+                                    </a>
                                 </div>
 
                                 <div class="profile-left__account">
                                     <p class="profile-left__account-heading">
                                         My items
                                     </p>
-                                    <p class="profile-left__account-desc">
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Reorder
-                                    </p>
-                                    <p class="profile-left__account-desc">
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Lists
-                                    </p>
-                                    <p class="profile-left__account-desc">
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Registries
-                                    </p>
+                                    </a>
                                 </div>
 
                                 <div class="profile-left__account">
                                     <p class="profile-left__account-heading">
                                         Subscriptions & plans
                                     </p>
-                                    <p class="profile-left__account-desc">
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Protection plans
-                                    </p>
+                                    </a>
                                 </div>
 
                                 <div class="profile-left__account">
                                     <p class="profile-left__account-heading">
                                         Customer Service
                                     </p>
-                                    <p class="profile-left__account-desc">
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Help
-                                    </p>
-                                    <p class="profile-left__account-desc">
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="profile-left__account-desc"
+                                    >
                                         Terms of Use
-                                    </p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
+
+                        <form
+                            action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                            class="add-card-search-form"
+                        >
+                            <input
+                                type="search"
+                                name=""
+                                id=""
+                                class="add-card__search"
+                                placeholder="Search for item"
+                                required
+                            />
+                            <button
+                                type="submit"
+                                class="add-card__search-submit"
+                            >
+                                <img
+                                    src="./assets/images/search-form.svg"
+                                    alt=""
+                                />
+                            </button>
+                        </form>
 
                         <div class="add-card">
                             <form
@@ -12391,6 +12438,12 @@
                                             <img
                                                 src="./assets/images/Arrow - Left.svg"
                                                 alt=""
+                                                class="add-card__arrow"
+                                            />
+                                            <img
+                                                src="./assets/images/addcard-arrow.svg"
+                                                alt=""
+                                                class="add-card__mobile-arrow"
                                             />
                                         </a>
                                         Add credit or debit card
