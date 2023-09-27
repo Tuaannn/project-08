@@ -518,12 +518,13 @@ a {
 }
 .header-grocery__triangle {
   position: absolute;
-  top: -8px;
+  top: -6px;
   left: 43%;
   background: #fff;
   box-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
   width: 15px;
   height: 15px;
+  border-radius: 4px;
   rotate: 45deg;
 }
 .header-grocery__list {
@@ -755,12 +756,13 @@ a {
 }
 .header-beauty__triangle {
   position: absolute;
-  top: -8px;
+  top: -6px;
   left: 53%;
   background: #fff;
   box-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
   width: 15px;
   height: 15px;
+  border-radius: 4px;
   rotate: 45deg;
 }
 .header-beauty__list {
@@ -1325,17 +1327,17 @@ a {
 }
 .total-filter {
   position: relative;
-  cursor: pointer;
-  padding: 6px 12px;
-  width: 110px;
+  width: 101px;
   height: 36px;
   border-radius: 6px;
   background: #fff;
 }
 .total-filter__wrap {
+  margin-top: 1px;
+  padding: 8px 12px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  cursor: pointer;
 }
 .total-filter__desc {
   color: #6c6c72;
@@ -1343,6 +1345,7 @@ a {
   font-weight: 700;
   line-height: 1.42;
   user-select: none;
+  align-self: flex-end;
 }
 .total-filter__checkbox:checked ~ .total-filter-detail {
   visibility: visible;
@@ -1356,7 +1359,7 @@ a {
   margin-bottom: 30px;
 }
 .total-filter-detail {
-  z-index: 5;
+  z-index: 10;
   padding: 50px 30px;
   border-radius: 16px;
   position: absolute;
@@ -1555,6 +1558,7 @@ a {
   filter: drop-shadow(0px 40px 90px rgba(200, 200, 200, 0.4));
   width: 15px;
   height: 15px;
+  border-radius: 4px;
   rotate: 45deg;
 }
 

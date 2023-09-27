@@ -6,7 +6,7 @@
 @use "../components/filter";
 
 main {
-    background-color: #fafafd;
+    background-color: #f6f6f6;
 }
 
 .block-wrap {
@@ -76,6 +76,11 @@ main {
 
 /*  Mobile */
 @media screen and (max-width: 767.98px) {
+    main,
+    .total,
+    .hero {
+        background-color: #fafafd;
+    }
     .block-wrap {
         padding-top: 20px;
         grid-template-columns: 1fr;

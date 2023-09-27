@@ -50,7 +50,7 @@
 
         &__triangle {
             position: absolute;
-            top: -8px;
+            top: -6px;
             left: 43%;
 
             background: #fff;
@@ -58,6 +58,8 @@
 
             width: 15px;
             height: 15px;
+            border-radius: 4px;
+
             rotate: 45deg;
         }
 

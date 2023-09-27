@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Grocerymart</title>
-        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/profile.css" />
         <link rel="stylesheet" href="./assets/font/stylesheet.css" />
         <link
             rel="apple-touch-icon"
@@ -92,11 +92,11 @@
                         />
                     </label>
                     <div class="header-left">
-                        <a href="#!" class="header__logo">
+                        <a href="./index.html" class="header__logo">
                             <img src="./assets/images/logo.svg" alt="" />
                         </a>
 
-                        <a href="#!" class="header__mobile-logo">
+                        <a href="./index.html" class="header__mobile-logo">
                             <img src="./assets/images/mobile-logo.svg" alt="" />
                         </a>
 
@@ -6254,7 +6254,7 @@
                                 />
                             </a>
                         </div>
-                        <a href="./profile.html" class="header__avatar">
+                        <a href="#!" class="header__avatar">
                             <img
                                 src="./assets/images/header-avt.jpg"
                                 alt=""
@@ -12308,388 +12308,216 @@
                 </div>
             </div>
         </header>
-        <main>
-            <div class="hero">
-                <div class="container">
-                    <div class="hero-wrap">
-                        <img
-                            src="./assets/images/hero-img.png"
-                            alt=""
-                            class="hero__img"
-                        />
-                        <img
-                            src="./assets/images/mobile-hero.png"
-                            alt=""
-                            class="hero__mobile-img"
-                        />
+        <div class="profile">
+            <div class="container">
+                <div class="profile-wrap">
+                    <div class="profile-left">
+                        <div class="profile-left__bgr">
+                            <div class="profile-left__info">
+                                <img
+                                    src="./assets/images/profile.jpg"
+                                    alt=""
+                                    class="profile-left__img"
+                                />
+                                <p class="profile-left__name">Imran Khan</p>
+                                <p class="profile-left__register">
+                                    Registered: 17th May 2022
+                                </p>
+                            </div>
+                            <div class="profile-left__account">
+                                <p class="profile-left__account-heading">
+                                    Manage Account
+                                </p>
+                                <p class="profile-left__account-desc">
+                                    Personal info
+                                </p>
+                                <p class="profile-left__account-desc">
+                                    Addresses
+                                </p>
+                                <p class="profile-left__account-desc">
+                                    Communications & privacy
+                                </p>
+                            </div>
+
+                            <div class="profile-left__account">
+                                <p class="profile-left__account-heading">
+                                    My items
+                                </p>
+                                <p class="profile-left__account-desc">
+                                    Reorder
+                                </p>
+                                <p class="profile-left__account-desc">Lists</p>
+                                <p class="profile-left__account-desc">
+                                    Registries
+                                </p>
+                            </div>
+
+                            <div class="profile-left__account">
+                                <p class="profile-left__account-heading">
+                                    Subscriptions & plans
+                                </p>
+                                <p class="profile-left__account-desc">
+                                    Protection plans
+                                </p>
+                            </div>
+
+                            <div class="profile-left__account">
+                                <p class="profile-left__account-heading">
+                                    Customer Service
+                                </p>
+                                <p class="profile-left__account-desc">Help</p>
+                                <p class="profile-left__account-desc">
+                                    Terms of Use
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="category">
-                <div class="container">
-                    <h2 class="category__heading">Browse Categories</h2>
-
-                    <div class="category-list">
-                        <a href="./categories.html" class="category-item">
-                            <div class="category-item__img-block">
-                                <img
-                                    src="./assets/images/category1.png"
-                                    alt=""
-                                    class="category-item__img"
-                                />
-                            </div>
-                            <div class="category-info">
-                                <p class="category-info__price">$24 - $150</p>
-                                <p class="category-info__desc">
-                                    New sumatra mandeling coffe blend
-                                </p>
-                            </div>
-                        </a>
-
-                        <a href="./categories.html" class="category-item">
-                            <div class="category-item__img-block">
-                                <img
-                                    src="./assets/images/category2.png"
-                                    alt=""
-                                    class="category-item__img"
-                                />
-                            </div>
-                            <div class="category-info">
-                                <p class="category-info__price">$37 - $160</p>
-                                <p class="category-info__desc">
-                                    Espresso arabica and robusta beans
-                                </p>
-                            </div>
-                        </a>
-
-                        <a href="./categories.html" class="category-item">
-                            <div class="category-item__img-block">
-                                <img
-                                    src="./assets/images/category3.png"
-                                    alt=""
-                                    class="category-item__img"
-                                />
-                            </div>
-                            <div class="category-info">
-                                <p class="category-info__price">$32 - $160</p>
-                                <p class="category-info__desc">
-                                    Lavazza top class whole bean coffee blend
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="total">
-                <div class="container">
-                    <div class="total-top">
-                        <h2 class="total__heading">Total LavAzza 1320</h2>
-                        <a href="#!" class="total-filter">
-                            <label for="filter" class="total-filter__wrap">
-                                <p class="total-filter__desc">Filter</p>
-
-                                <img
-                                    src="./assets/images/Filter.svg"
-                                    alt=""
-                                    class="total-filter__img"
-                                />
-                            </label>
-
-                            <input
-                                type="checkbox"
-                                name="filter"
-                                id="filter"
-                                class="total-filter__checkbox"
-                                hidden
-                            />
-
-                            <div class="total-filter-detail">
-                                <p class="total-filter__heading">Filter</p>
-                                <form
-                                    action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                    <div class="profile-right">
+                        <div class="profile-right__wallet">
+                            <h2 class="profile-right__heading">My Wallet</h2>
+                            <p class="profile-right__desc">Payment methods</p>
+                            <div class="profile-right__card-group">
+                                <a
+                                    href="./add-card.html"
+                                    class="profile-right__card-wrap"
                                 >
-                                    <div class="total-filter-list">
-                                        <div class="total-filter-item">
-                                            <p class="total-filter__info">
-                                                Price
-                                            </p>
-                                            <div
-                                                class="total-filter__separate"
-                                            ></div>
-                                            <div class="total-filter__minmax">
-                                                <p class="total-filter__min">
-                                                    Minimum
-                                                </p>
-                                                <p class="total-filter__max">
-                                                    Maximum
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <img
+                                        src="./assets/images/card1.svg"
+                                        alt=""
+                                        class="profile-right__card"
+                                    />
+                                </a>
 
-                                        <div class="total-filter-item">
-                                            <label
-                                                for=""
-                                                class="total-filter__info"
-                                            >
-                                                Size/Weight
-                                            </label>
-
-                                            <div
-                                                class="total-filter__select-wrap"
-                                            >
-                                                <select
-                                                    name="scale"
-                                                    id="scale"
-                                                    class="total-filter__select"
-                                                >
-                                                    <option value="500g">
-                                                        500g
-                                                    </option>
-                                                    <option value="300g">
-                                                        300g
-                                                    </option>
-                                                </select>
-                                                <div
-                                                    class="total-filter__select-separate"
-                                                ></div>
-                                                <select
-                                                    name="unit"
-                                                    id="unit"
-                                                    class="total-filter__select"
-                                                >
-                                                    <option value="Gram">
-                                                        Gram
-                                                    </option>
-                                                    <option value=" Kilogam">
-                                                        Kilogam
-                                                    </option>
-                                                </select>
-                                            </div>
-                                            <div
-                                                class="total-filter__type-size"
-                                            >
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
-                                                >
-                                                    Small
-                                                </label>
-
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
-                                                >
-                                                    Meidum
-                                                </label>
-
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
-                                                >
-                                                    Large
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="total-filter-item">
-                                            <label
-                                                for="search"
-                                                class="total-filter__info"
-                                            >
-                                                Brand
-                                            </label>
-                                            <input
-                                                type="text"
-                                                name="search"
-                                                id="search"
-                                                autocomplete="off"
-                                                class="total-filter__search"
-                                                placeholder="Search brand name"
-                                            />
-                                            <button
-                                                class="total-filter__search-button"
-                                            >
-                                                <img
-                                                    src="./assets/images/search-form.svg"
-                                                    alt=""
-                                                />
-                                            </button>
-
-                                            <div
-                                                class="total-filter__type-size"
-                                            >
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
-                                                >
-                                                    Lavazza
-                                                </label>
-
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
-                                                >
-                                                    Nescafe
-                                                </label>
-
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
-                                                >
-                                                    Starbucks
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="total-filter__button-wrap">
-                                        <button
-                                            type="submit"
-                                            class="total-filter__cancel"
-                                        >
-                                            Cancel
-                                        </button>
-                                        <button
-                                            type="submit"
-                                            class="total-filter__result"
-                                        >
-                                            Show Result
-                                        </button>
-                                    </div>
-                                </form>
-
-                                <div class="total-filter__triangle"></div>
+                                <a
+                                    href="./add-card.html"
+                                    class="profile-right__card-wrap"
+                                >
+                                    <img
+                                        src="./assets/images/card2.svg"
+                                        alt=""
+                                        class="profile-right__card"
+                                    />
+                                </a>
+                                <a
+                                    href="./add-card.html"
+                                    class="profile-right__card-wrap"
+                                >
+                                    <div class="profile-right__add-card"></div>
+                                    <p class="profile-right__add-desc">
+                                        Add New Card
+                                    </p>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="total-list">
-                        <div class="total-item">
-                            <a href="#!" class="total-item__img-block">
+                        </div>
+
+                        <div class="profile-right__account">
+                            <h2 class="profile-right__heading">Account info</h2>
+                            <p class="profile-right__desc">
+                                Addresses, contact information and password
+                            </p>
+                            <div class="profile-right__account-info">
+                                <div class="profile-right__account-item">
+                                    <div
+                                        class="profile-right__account-item-wrap"
+                                    >
+                                        <p
+                                            class="profile-right__account-item-title"
+                                        >
+                                            Email Address
+                                        </p>
+                                        <p
+                                            class="profile-right__account-item-desc"
+                                        >
+                                            tarek97.ta@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-right__account-item">
+                                    <div
+                                        class="profile-right__account-item-wrap"
+                                    >
+                                        <p
+                                            class="profile-right__account-item-title"
+                                        >
+                                            Phone number
+                                        </p>
+                                        <p
+                                            class="profile-right__account-item-desc"
+                                        >
+                                            +000 11122 2345 657
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-right__account-item">
+                                    <div
+                                        class="profile-right__account-item-wrap"
+                                    >
+                                        <p
+                                            class="profile-right__account-item-title"
+                                        >
+                                            Add an address
+                                        </p>
+                                        <p
+                                            class="profile-right__account-item-desc"
+                                        >
+                                            Bangladesh Embassy, Washington, DC
+                                            20008
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-right__list">
+                            <h2 class="profile-right__heading">Lists</h2>
+                            <p class="profile-right__desc">2 items - Primar</p>
+
+                            <div class="profile-right__list-item">
                                 <img
-                                    src="./assets/images/total1.png"
+                                    src="./assets/images/list1.png"
                                     alt=""
-                                    class="total-item__img"
+                                    class="profile-right__list-item-img"
                                 />
-                            </a>
-                            <div class="total-content">
-                                <h3>
-                                    <a href="#!" class="total-content__heading">
+                                <div class="profile-right__list-item-wrap">
+                                    <h3
+                                        class="profile-right__list-item-heading"
+                                    >
                                         Coffee Beans - Espresso Arabica and
                                         Robusta Beans
-                                    </a>
-                                </h3>
-                                <p class="total-content__other">Lavazza</p>
-                                <div class="total-content__rate">
-                                    <p class="total-content__price">$47.00</p>
-                                    <div class="total-content__detail">
-                                        <img
-                                            src="./assets/images/Star.svg"
-                                            alt=""
-                                            class="total-content__star"
-                                        />
-                                        <p class="total-content__number">4.3</p>
-                                    </div>
+                                    </h3>
+
+                                    <p class="profile-right__list-item-price">
+                                        $47.00
+                                    </p>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="total-item">
-                            <a href="#!" class="total-item__img-block">
+                            <div class="profile-right__list-item">
                                 <img
-                                    src="./assets/images/total2.png"
+                                    src="./assets/images/list2.png"
                                     alt=""
-                                    class="total-item__img"
+                                    class="profile-right__list-item-img"
                                 />
-                            </a>
-                            <div class="total-content">
-                                <h3>
-                                    <a href="#!" class="total-content__heading">
+                                <div class="profile-right__list-item-wrap">
+                                    <h3
+                                        class="profile-right__list-item-heading"
+                                    >
                                         Lavazza Coffee Blends - Try the Italian
                                         Espresso
-                                    </a>
-                                </h3>
-                                <p class="total-content__other">Lavazza</p>
-                                <div class="total-content__rate">
-                                    <p class="total-content__price">$53.00</p>
-                                    <div class="total-content__detail">
-                                        <img
-                                            src="./assets/images/Star.svg"
-                                            alt=""
-                                            class="total-content__star"
-                                        />
-                                        <p class="total-content__number">3.4</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </h3>
 
-                        <div class="total-item">
-                            <a
-                                href="#!"
-                                class="total-item__img-block total-item__img-block--actived"
-                            >
-                                <img
-                                    src="./assets/images/total3.png"
-                                    alt=""
-                                    class="total-item__img"
-                                />
-                            </a>
-                            <div class="total-content">
-                                <h3>
-                                    <a href="#!" class="total-content__heading">
-                                        Lavazza - Caffè Espresso Black Tin -
-                                        Ground coffee
-                                    </a>
-                                </h3>
-                                <p class="total-content__other">welikecoffee</p>
-                                <div class="total-content__rate">
-                                    <p class="total-content__price">$99.99</p>
-                                    <div class="total-content__detail">
-                                        <img
-                                            src="./assets/images/Star.svg"
-                                            alt=""
-                                            class="total-content__star"
-                                        />
-                                        <p class="total-content__number">5.0</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="total-item">
-                            <a href="#!" class="total-item__img-block">
-                                <img
-                                    src="./assets/images/total4.png"
-                                    alt=""
-                                    class="total-item__img"
-                                />
-                            </a>
-                            <div class="total-content">
-                                <h3>
-                                    <a href="#!" class="total-content__heading">
-                                        Qualità Oro Mountain Grown - Espresso
-                                        Coffee Beans
-                                    </a>
-                                </h3>
-                                <p class="total-content__other">Lavazza</p>
-                                <div class="total-content__rate">
-                                    <p class="total-content__price">$38.65</p>
-                                    <div class="total-content__detail">
-                                        <img
-                                            src="./assets/images/Star.svg"
-                                            alt=""
-                                            class="total-content__star"
-                                        />
-                                        <p class="total-content__number">4.4</p>
-                                    </div>
+                                    <p class="profile-right__list-item-price">
+                                        $53.00
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <script src="./main.js"></script>
+        </div>
     </body>
 </html>

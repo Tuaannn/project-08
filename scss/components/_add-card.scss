@@ -1,0 +1,166 @@
+@use "../base";
+@use "../abstracts";
+@use "../components/account-info";
+
+.add-card {
+    &__heading {
+        color: abstracts.$textColor;
+
+        font-size: 2.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.45;
+
+        display: flex;
+
+        align-items: center;
+        column-gap: 10px;
+
+        a {
+            margin-top: 4px;
+        }
+    }
+
+    &-list {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 30px;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        color: abstracts.$textColor;
+
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.44;
+    }
+
+    &__text {
+        margin-top: 20px;
+        display: flex;
+        // width: 437px;
+        padding: 12px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        border: 1px solid #d2d1d6;
+
+        color: abstracts.$textColor;
+
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.44;
+
+        &::placeholder {
+            color: #d2d1d6;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.44;
+        }
+    }
+
+    &__prefecence {
+        margin-top: 30px;
+        color: abstracts.$textColor;
+
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.44;
+    }
+
+    &__default {
+        margin-top: 10px;
+        display: flex;
+        column-gap: 10px;
+    }
+
+    &__check {
+        &:checked ~ .add-card__desc::before {
+            background-color: #1a162e;
+            border-color: #1a162e;
+        }
+
+        &:checked ~ .add-card__desc::after {
+            display: block;
+        }
+    }
+
+    &__desc {
+        position: relative;
+        margin-left: 30px;
+        &::before {
+            position: absolute;
+            left: -30px;
+            top: 2px;
+
+            content: "";
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            border: 1px solid #1a162e;
+            border-radius: 6px;
+        }
+
+        &::after {
+            position: absolute;
+            top: 6px;
+            left: -27px;
+            content: "";
+            display: inline-block;
+
+            width: 12px;
+            height: 6px;
+
+            border-bottom: 2px solid #fff;
+            border-left: 2px solid #fff;
+            rotate: -45deg;
+            display: none;
+        }
+    }
+
+    &__desc {
+        color: abstracts.$textColor;
+        user-select: none;
+
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.46;
+    }
+
+    &__button-group {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 30px;
+    }
+
+    &__cancel {
+        cursor: pointer;
+        color: abstracts.$textColor;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &__save {
+        cursor: pointer;
+        width: 123px;
+        height: 44px;
+        border-radius: 30px;
+        background: #ffb700;
+
+        color: abstracts.$textColor;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+}

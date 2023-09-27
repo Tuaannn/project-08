@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grocerymart</title>
+        <link rel="stylesheet" href="./assets/css/add-card.css" />
+        <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+    <div class="profile">
+        <div class="container">
+            <div class="profile-wrap">
+                <div class="profile-left">
+                    <div class="profile-left__bgr">
+                        <div class="profile-left__info">
+                            <img
+                                src="./assets/images/profile.jpg"
+                                alt=""
+                                class="profile-left__img"
+                            />
+                            <p class="profile-left__name">Imran Khan</p>
+                            <p class="profile-left__register">
+                                Registered: 17th May 2022
+                            </p>
+                        </div>
+                        <div class="profile-left__account">
+                            <p class="profile-left__account-heading">
+                                Manage Account
+                            </p>
+                            <p class="profile-left__account-desc">
+                                Personal info
+                            </p>
+                            <p class="profile-left__account-desc">Addresses</p>
+                            <p class="profile-left__account-desc">
+                                Communications & privacy
+                            </p>
+                        </div>
+
+                        <div class="profile-left__account">
+                            <p class="profile-left__account-heading">
+                                My items
+                            </p>
+                            <p class="profile-left__account-desc">Reorder</p>
+                            <p class="profile-left__account-desc">Lists</p>
+                            <p class="profile-left__account-desc">Registries</p>
+                        </div>
+
+                        <div class="profile-left__account">
+                            <p class="profile-left__account-heading">
+                                Subscriptions & plans
+                            </p>
+                            <p class="profile-left__account-desc">
+                                Protection plans
+                            </p>
+                        </div>
+
+                        <div class="profile-left__account">
+                            <p class="profile-left__account-heading">
+                                Customer Service
+                            </p>
+                            <p class="profile-left__account-desc">Help</p>
+                            <p class="profile-left__account-desc">
+                                Terms of Use
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-card">
+                    <form
+                        action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                        class="add-card-form"
+                        autocomplete="off"
+                        method="post"
+                    >
+                        <h2 class="add-card__heading">
+                            <a href="#!">
+                                <img
+                                    src="./assets/images/Arrow - Left.svg"
+                                    alt=""
+                                />
+                            </a>
+                            Add credit or debit card
+                        </h2>
+                        <div class="add-card-list">
+                            <div class="add-card-item">
+                                <label for="" class="add-card__label">
+                                    First Name
+                                </label>
+                                <input
+                                    type="text"
+                                    value=""
+                                    name="First Name"
+                                    class="add-card__text"
+                                    placeholder="Imran"
+                                    required
+                                />
+                            </div>
+
+                            <div class="add-card-item">
+                                <label for="" class="add-card__label">
+                                    Last Name
+                                </label>
+                                <input
+                                    type="text"
+                                    name="Last Name"
+                                    value=""
+                                    required
+                                    class="add-card__text"
+                                    placeholder="Khan"
+                                />
+                            </div>
+
+                            <div class="add-card-item">
+                                <label for="" class="add-card__label">
+                                    Card Information
+                                </label>
+                                <input
+                                    name="Card Information"
+                                    type="text"
+                                    value=""
+                                    class="add-card__text"
+                                    required
+                                    placeholder="Card Number"
+                                />
+                            </div>
+
+                            <div class="add-card-item">
+                                <label for="" class="add-card__label">
+                                    Expiration Date
+                                </label>
+                                <input
+                                    name="Expiration Date"
+                                    type="text"
+                                    value=""
+                                    class="add-card__text"
+                                    required
+                                    placeholder="MM/YY"
+                                />
+                            </div>
+
+                            <div class="add-card-item">
+                                <label for="" class="add-card__label">
+                                    CVV
+                                </label>
+                                <input
+                                    name="CVV"
+                                    type="text"
+                                    value=""
+                                    class="add-card__text"
+                                    required
+                                    placeholder="123"
+                                    pattern="[0-9]+"
+                                    maxlength="3"
+                                    minlength="3"
+                                />
+                            </div>
+
+                            <div class="add-card-item">
+                                <label for="" class="add-card__label">
+                                    Phone Number
+                                </label>
+                                <input
+                                    name="Phone Number"
+                                    type="text"
+                                    value=""
+                                    required
+                                    class="add-card__text"
+                                    placeholder="017"
+                                />
+                            </div>
+                        </div>
+                        <h2 class="add-card__prefecence">Card Preferences</h2>
+                        <div class="add-card__default">
+                            <input
+                                type="checkbox"
+                                name="checkbox"
+                                id="checkbox"
+                                class="add-card__check"
+                                hidden
+                            />
+                            <label for="checkbox" class="add-card__desc">
+                                Set as default card
+                            </label>
+                        </div>
+                        <div class="add-card__button-group">
+                            <button type="submit" class="add-card__cancel">
+                                Cancel
+                            </button>
+                            <button type="submit" class="add-card__save">
+                                Save Card
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
