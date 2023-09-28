@@ -1583,9 +1583,9 @@ a {
   .product-review__name {
     font-size: 1.8rem;
   }
-  .product-review__content {
+  .product-review-content {
     width: 214px;
-    margin-top: 0px;
+    margin-top: 10px;
   }
   .product-review-star-group {
     margin-top: 20px;
