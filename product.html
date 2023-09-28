@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Grocerymart</title>
-        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/product.css" />
         <link rel="stylesheet" href="./assets/font/stylesheet.css" />
         <link
             rel="apple-touch-icon"
@@ -92,11 +92,11 @@
                         />
                     </label>
                     <div class="header-left">
-                        <a href="#!" class="header__logo">
+                        <a href="./index.html" class="header__logo">
                             <img src="./assets/images/logo.svg" alt="" />
                         </a>
 
-                        <a href="#!" class="header__mobile-logo">
+                        <a href="./index.html" class="header__mobile-logo">
                             <img src="./assets/images/mobile-logo.svg" alt="" />
                         </a>
 
@@ -12309,401 +12309,279 @@
             </div>
         </header>
         <main>
-            <div class="hero">
+            <div class="product">
                 <div class="container">
-                    <div class="hero-wrap">
-                        <img
-                            src="./assets/images/hero-img.png"
-                            alt=""
-                            class="hero__img"
+                    <form
+                        action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                        class="add-card-search-form"
+                    >
+                        <input
+                            type="search"
+                            name=""
+                            id=""
+                            class="add-card__search"
+                            placeholder="Search for item"
+                            required
                         />
+                        <button type="submit" class="add-card__search-submit">
+                            <img src="./assets/images/search-form.svg" alt="" />
+                        </button>
+                    </form>
+
+                    <div class="product-arrow">
+                        <p class="product-arrow__desc">Departments</p>
+                        <p class="product-arrow__desc">Coffee</p>
+                        <p class="product-arrow__desc">Coffee Beans</p>
+                        <p
+                            class="product-arrow__desc product-arrow__desc--actived"
+                        >
+                            LavAzza
+                        </p>
+                    </div>
+
+                    <div class="product-about">
                         <img
-                            src="./assets/images/mobile-hero.png"
+                            src="./assets/images/product.png"
                             alt=""
-                            class="hero__mobile-img"
+                            class="product-about__img"
                         />
-                    </div>
-                </div>
-            </div>
 
-            <div class="category">
-                <div class="container">
-                    <h2 class="category__heading">Browse Categories</h2>
+                        <div class="product-about-content">
+                            <h2 class="product-about__heading">
+                                Coffee Beans - Espresso Arabica and Robusta
+                                Beans
+                            </h2>
+                            <div class="product-about-content-wrap">
+                                <div class="product-about-left">
+                                    <p class="product-about-review">
+                                        (3.5) 1100 reviews
+                                    </p>
 
-                    <div class="category-list">
-                        <a href="./categories.html" class="category-item">
-                            <div class="category-item__img-block">
-                                <img
-                                    src="./assets/images/category1.png"
-                                    alt=""
-                                    class="category-item__img"
-                                />
-                            </div>
-                            <div class="category-info">
-                                <p class="category-info__price">$24 - $150</p>
-                                <p class="category-info__desc">
-                                    New sumatra mandeling coffe blend
-                                </p>
-                            </div>
-                        </a>
-
-                        <a href="./categories.html" class="category-item">
-                            <div class="category-item__img-block">
-                                <img
-                                    src="./assets/images/category2.png"
-                                    alt=""
-                                    class="category-item__img"
-                                />
-                            </div>
-                            <div class="category-info">
-                                <p class="category-info__price">$37 - $160</p>
-                                <p class="category-info__desc">
-                                    Espresso arabica and robusta beans
-                                </p>
-                            </div>
-                        </a>
-
-                        <a href="./categories.html" class="category-item">
-                            <div class="category-item__img-block">
-                                <img
-                                    src="./assets/images/category3.png"
-                                    alt=""
-                                    class="category-item__img"
-                                />
-                            </div>
-                            <div class="category-info">
-                                <p class="category-info__price">$32 - $160</p>
-                                <p class="category-info__desc">
-                                    Lavazza top class whole bean coffee blend
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="total">
-                <div class="container">
-                    <div class="total-top">
-                        <h2 class="total__heading">Total LavAzza 1320</h2>
-                        <a href="#!" class="total-filter">
-                            <label for="filter" class="total-filter__wrap">
-                                <p class="total-filter__desc">Filter</p>
-
-                                <img
-                                    src="./assets/images/Filter.svg"
-                                    alt=""
-                                    class="total-filter__img"
-                                />
-                            </label>
-
-                            <input
-                                type="checkbox"
-                                name="filter"
-                                id="filter"
-                                class="total-filter__checkbox"
-                                hidden
-                            />
-
-                            <div class="total-filter-detail">
-                                <p class="total-filter__heading">Filter</p>
-                                <form
-                                    action="https://api-gateway.fullstack.edu.vn/action_page.php"
-                                >
-                                    <div class="total-filter-list">
-                                        <div class="total-filter-item">
-                                            <p class="total-filter__info">
-                                                Price
-                                            </p>
-                                            <div
-                                                class="total-filter__separate"
-                                            ></div>
-                                            <div class="total-filter__minmax">
-                                                <p class="total-filter__min">
-                                                    Minimum
-                                                </p>
-                                                <p class="total-filter__max">
-                                                    Maximum
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="total-filter-item">
-                                            <label
-                                                for=""
-                                                class="total-filter__info"
-                                            >
-                                                Size/Weight
-                                            </label>
-
-                                            <div
-                                                class="total-filter__select-wrap"
-                                            >
-                                                <select
-                                                    name="scale"
-                                                    id="scale"
-                                                    class="total-filter__select"
+                                    <form
+                                        action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                                    >
+                                        <div class="total-filter-list">
+                                            <div class="total-filter-item">
+                                                <label
+                                                    for=""
+                                                    class="total-filter__info"
                                                 >
-                                                    <option value="500g">
-                                                        500g
-                                                    </option>
-                                                    <option value="300g">
-                                                        300g
-                                                    </option>
-                                                </select>
+                                                    Size/Weight
+                                                </label>
+
                                                 <div
-                                                    class="total-filter__select-separate"
-                                                ></div>
-                                                <select
-                                                    name="unit"
-                                                    id="unit"
-                                                    class="total-filter__select"
+                                                    class="total-filter__select-wrap"
                                                 >
-                                                    <option value="Gram">
-                                                        Gram
-                                                    </option>
-                                                    <option value=" Kilogam">
-                                                        Kilogam
-                                                    </option>
-                                                </select>
-                                            </div>
-                                            <div
-                                                class="total-filter__type-size"
-                                            >
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
+                                                    <select
+                                                        name="scale"
+                                                        id="scale"
+                                                        class="total-filter__select"
+                                                    >
+                                                        <option value="500g">
+                                                            500g
+                                                        </option>
+                                                        <option value="300g">
+                                                            300g
+                                                        </option>
+                                                    </select>
+                                                    <div
+                                                        class="total-filter__select-separate"
+                                                    ></div>
+                                                    <select
+                                                        name="unit"
+                                                        id="unit"
+                                                        class="total-filter__select"
+                                                    >
+                                                        <option value="Gram">
+                                                            Gram
+                                                        </option>
+                                                        <option
+                                                            value=" Kilogam"
+                                                        >
+                                                            Kilogam
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div
+                                                    class="total-filter__type-size"
                                                 >
-                                                    Small
-                                                </label>
+                                                    <label
+                                                        for=""
+                                                        class="total-filter__size"
+                                                    >
+                                                        Small
+                                                    </label>
 
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
-                                                >
-                                                    Meidum
-                                                </label>
+                                                    <label
+                                                        for=""
+                                                        class="total-filter__size"
+                                                    >
+                                                        Meidum
+                                                    </label>
 
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
-                                                >
-                                                    Large
-                                                </label>
+                                                    <label
+                                                        for=""
+                                                        class="total-filter__size"
+                                                    >
+                                                        Large
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
+                                    </form>
+                                </div>
 
-                                        <div class="total-filter-item">
-                                            <label
-                                                for="search"
-                                                class="total-filter__info"
+                                <div class="product-about-right">
+                                    <div class="product-about-wrap">
+                                        <p class="product-about__detail">
+                                            Compare
+                                        </p>
+                                    </div>
+
+                                    <div class="product-about-wrap">
+                                        <p class="product-about__detail">
+                                            Delivery
+                                        </p>
+                                        <p class="product-about-detail__desc">
+                                            From $6 for 1-3 days
+                                        </p>
+                                    </div>
+
+                                    <div class="product-about-wrap">
+                                        <p class="product-about__detail">
+                                            Pickup
+                                        </p>
+                                        <p class="product-about-detail__desc">
+                                            Out of 2 store, today
+                                        </p>
+                                    </div>
+
+                                    <div class="product-about-cart">
+                                        <p class="product-about__sale">
+                                            $500.00
+                                        </p>
+
+                                        <p class="product-about__price">
+                                            $540.00
+                                        </p>
+
+                                        <div
+                                            class="product-about-addcart-group"
+                                        >
+                                            <a
+                                                href="#!"
+                                                class="product-about__addcart"
                                             >
-                                                Brand
-                                            </label>
-                                            <input
-                                                type="text"
-                                                name="search"
-                                                id="search"
-                                                autocomplete="off"
-                                                class="total-filter__search"
-                                                placeholder="Search brand name"
-                                            />
-                                            <button
-                                                class="total-filter__search-button"
-                                            >
+                                                Add to cart
+                                            </a>
+
+                                            <a href="#!">
                                                 <img
-                                                    src="./assets/images/search-form.svg"
+                                                    src="./assets/images/product-heart.svg"
                                                     alt=""
+                                                    class="product-about__addcart-img"
                                                 />
-                                            </button>
-
-                                            <div
-                                                class="total-filter__type-size"
-                                            >
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
-                                                >
-                                                    Lavazza
-                                                </label>
-
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
-                                                >
-                                                    Nescafe
-                                                </label>
-
-                                                <label
-                                                    for=""
-                                                    class="total-filter__size"
-                                                >
-                                                    Starbucks
-                                                </label>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="total-filter__button-wrap">
-                                        <button
-                                            type="submit"
-                                            class="total-filter__cancel"
-                                        >
-                                            Cancel
-                                        </button>
-                                        <button
-                                            type="submit"
-                                            class="total-filter__result"
-                                        >
-                                            Show Result
-                                        </button>
-                                    </div>
-                                </form>
-
-                                <div class="total-filter__triangle"></div>
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="total-list">
-                        <div class="total-item">
-                            <a
-                                href="./product.html"
-                                class="total-item__img-block"
+
+                    <div class="product-review">
+                        <div class="product-review-info">
+                            <p class="product-review-info__desc">Description</p>
+                            <p class="product-review-info__desc">Features</p>
+                            <p
+                                class="product-review-info__desc product-review-info__desc--actived"
                             >
-                                <img
-                                    src="./assets/images/total1.png"
-                                    alt=""
-                                    class="total-item__img"
-                                />
-                            </a>
-                            <div class="total-content">
-                                <h3>
-                                    <a
-                                        href="./product.html"
-                                        class="total-content__heading"
-                                    >
-                                        Coffee Beans - Espresso Arabica and
-                                        Robusta Beans
-                                    </a>
-                                </h3>
-                                <p class="total-content__other">Lavazza</p>
-                                <div class="total-content__rate">
-                                    <p class="total-content__price">$47.00</p>
-                                    <div class="total-content__detail">
-                                        <img
-                                            src="./assets/images/Star.svg"
-                                            alt=""
-                                            class="total-content__star"
-                                        />
-                                        <p class="total-content__number">4.3</p>
+                                Review (1100)
+                            </p>
+                            <p class="product-review-info__desc">Similar</p>
+                        </div>
+                        <h3 class="product-review__heading">
+                            What our customers are saying
+                        </h3>
+                        <div class="product-review-list">
+                            <div class="product-review-item">
+                                <div class="product-review-author">
+                                    <img
+                                        src="./assets/images/author1.jpg"
+                                        alt=""
+                                        class="product-review__img"
+                                    />
+                                    <div class="prodcut-review__content">
+                                        <p class="product-review__name">
+                                            Jakir Hussen
+                                        </p>
+                                        <p class="product-review-content">
+                                            Great product, I love this Coffee
+                                            Beans
+                                        </p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="total-item">
-                            <a
-                                href="./product.html"
-                                class="total-item__img-block"
-                            >
-                                <img
-                                    src="./assets/images/total2.png"
-                                    alt=""
-                                    class="total-item__img"
-                                />
-                            </a>
-                            <div class="total-content">
-                                <h3>
-                                    <a
-                                        href="./product.html"
-                                        class="total-content__heading"
-                                    >
-                                        Lavazza Coffee Blends - Try the Italian
-                                        Espresso
-                                    </a>
-                                </h3>
-                                <p class="total-content__other">Lavazza</p>
-                                <div class="total-content__rate">
-                                    <p class="total-content__price">$53.00</p>
-                                    <div class="total-content__detail">
-                                        <img
-                                            src="./assets/images/Star.svg"
-                                            alt=""
-                                            class="total-content__star"
-                                        />
-                                        <p class="total-content__number">3.4</p>
-                                    </div>
+                                <div class="product-review-star-group">
+                                    <img
+                                        src="./assets/images/star-prodcut.svg"
+                                        alt=""
+                                        class="product-review-star"
+                                    />
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="total-item">
-                            <a
-                                href="./product.html"
-                                class="total-item__img-block total-item__img-block--actived"
-                            >
-                                <img
-                                    src="./assets/images/total3.png"
-                                    alt=""
-                                    class="total-item__img"
-                                />
-                            </a>
-                            <div class="total-content">
-                                <h3>
-                                    <a
-                                        href="./product.html"
-                                        class="total-content__heading"
-                                    >
-                                        Lavazza - Caffè Espresso Black Tin -
-                                        Ground coffee
-                                    </a>
-                                </h3>
-                                <p class="total-content__other">welikecoffee</p>
-                                <div class="total-content__rate">
-                                    <p class="total-content__price">$99.99</p>
-                                    <div class="total-content__detail">
-                                        <img
-                                            src="./assets/images/Star.svg"
-                                            alt=""
-                                            class="total-content__star"
-                                        />
-                                        <p class="total-content__number">5.0</p>
+                            <div class="product-review-item">
+                                <div class="product-review-author">
+                                    <img
+                                        src="./assets/images/author2.jpg"
+                                        alt=""
+                                        class="product-review__img"
+                                    />
+                                    <div class="product-review-content">
+                                        <p class="product-review__name">
+                                            Jubed Ahmed
+                                        </p>
+                                        <p class="product-review-content">
+                                            Awesome Coffee, I love this Coffee
+                                            Beans
+                                        </p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="total-item">
-                            <a
-                                href="./product.html"
-                                class="total-item__img-block"
-                            >
-                                <img
-                                    src="./assets/images/total4.png"
-                                    alt=""
-                                    class="total-item__img"
-                                />
-                            </a>
-                            <div class="total-content">
-                                <h3>
-                                    <a
-                                        href="./product.html"
-                                        class="total-content__heading"
-                                    >
-                                        Qualità Oro Mountain Grown - Espresso
-                                        Coffee Beans
-                                    </a>
-                                </h3>
-                                <p class="total-content__other">Lavazza</p>
-                                <div class="total-content__rate">
-                                    <p class="total-content__price">$38.65</p>
-                                    <div class="total-content__detail">
-                                        <img
-                                            src="./assets/images/Star.svg"
-                                            alt=""
-                                            class="total-content__star"
-                                        />
-                                        <p class="total-content__number">4.4</p>
+                                <div class="product-review-star-group">
+                                    <img
+                                        src="./assets/images/star-prodcut.svg"
+                                        alt=""
+                                        class="product-review-star"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="product-review-item">
+                                <div class="product-review-author">
+                                    <img
+                                        src="./assets/images/author3.jpg"
+                                        alt=""
+                                        class="product-review__img"
+                                    />
+                                    <div class="product-review-content">
+                                        <p class="product-review__name">
+                                            Delwar Hussain
+                                        </p>
+                                        <p class="product-review__content">
+                                            Awesome Coffee, I love this Coffee
+                                            Beans
+                                        </p>
                                     </div>
+                                </div>
+
+                                <div class="product-review-star-group">
+                                    <img
+                                        src="./assets/images/star-prodcut.svg"
+                                        alt=""
+                                        class="product-review-star"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -12711,6 +12589,5 @@
                 </div>
             </div>
         </main>
-        <script src="./main.js"></script>
     </body>
 </html>
