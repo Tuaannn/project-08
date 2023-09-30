@@ -178,6 +178,26 @@ a {
   text-decoration: none;
 }
 
+html,
+body {
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(22, 24, 35, 0.2);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .header__navbar-list-item:hover .header-detail {
   visibility: visible;
   opacity: 1;
@@ -1333,13 +1353,14 @@ a {
 
 .item {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   padding: 30px;
   border-radius: 20px;
   top: 68px;
   right: -90px;
 }
 .item__heading {
+  cursor: default;
   color: #1a162e;
   display: flex;
   justify-content: space-between;
@@ -1385,6 +1406,7 @@ a {
 }
 .item__sub {
   color: #1a162e;
+  cursor: default;
   font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
@@ -1408,12 +1430,14 @@ a {
   font-weight: 500;
   display: flex;
   line-height: 1.45;
+  cursor: default;
   justify-content: space-between;
 }
 .item__sub-heading::after {
   content: "$425.99";
 }
 .item__submit {
+  cursor: pointer;
   margin-left: auto;
   margin-top: 30px;
   border-radius: 50px;
@@ -1456,6 +1480,13 @@ a {
     transition: 0.2s;
     background: #fff;
     box-shadow: 0px 40px 90px 20px rgba(200, 200, 200, 0.4);
+  }
+  .item-display:hover .item {
+    display: block;
+  }
+  .categories-list {
+    height: 70vh;
+    overflow-y: auto;
   }
 }
 /*  Tablet and mobile*/
@@ -1505,10 +1536,6 @@ a {
     display: none;
   }
 }
-.item-display:hover .item {
-  display: block;
-}
-
 .total-filter {
   position: relative;
   width: 101px;
@@ -1709,7 +1736,7 @@ a {
 .total-filter__search-button {
   position: absolute;
   top: 100px;
-  right: 26px;
+  right: 10px;
 }
 .total-filter__button-wrap {
   margin-top: 18px;

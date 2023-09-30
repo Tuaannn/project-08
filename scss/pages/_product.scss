@@ -45,6 +45,7 @@
 
         &__desc--actived {
             color: abstracts.$textColor;
+            cursor: pointer;
         }
     }
 
@@ -229,6 +230,7 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 1.45;
+                cursor: pointer;
 
                 &--actived {
                     color: abstracts.$textColor;
@@ -351,6 +353,7 @@
     }
 
     &-filter__select {
+        cursor: pointer;
         color: abstracts.$textColor;
 
         font-size: 1.5rem;
