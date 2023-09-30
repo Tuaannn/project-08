@@ -1,6 +1,7 @@
 @use "../base";
 @use "../layout/header";
 @use "../abstracts";
+@use "../components/item";
 
 .product {
     padding: 30px 0;

@@ -162,6 +162,8 @@
         align-items: center;
         justify-content: center;
         column-gap: 10px;
+        padding: 12px 0px;
+        cursor: pointer;
     }
 
     &__bag::after {
